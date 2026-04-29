@@ -25,7 +25,8 @@ blst = ["blstrs_plus"]
 [dependencies]
 anyhow = "1.0"
 bls12_381_plus =  { version = "0.8", optional = true }
-blstrs_plus = { version = "0.8", optional = true}
+#blstrs_plus = { version = "0.8", optional = true}
+blstrs_plus = { git = "https://github.com/Zilliqa/blstrs", branch = "update-blist_0.3.16", optional = true }
 hex = "0.4"
 hkdf = { version = "0.12", default-features = false }
 merlin = "3"
